@@ -579,8 +579,8 @@ const Contact = () => (
 const Footer = () => (
   <footer className="py-12 border-t border-white/5">
     <div className="max-w-7xl mx-auto px-6 text-center space-y-8">
-      <div className="font-plus-jakarta text-xl font-bold text-white uppercase tracking-tighter">
-        Harsh <span className="text-secondary-cyan">Gulia</span>
+      <div className="font-plus-jakarta text-xl font-bold text-white uppercase tracking-tight">
+        Harsh&nbsp;<span className="text-secondary-cyan">Gulia</span>
       </div>
       <div className="flex justify-center gap-8">
         {[
