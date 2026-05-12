@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #09090b; /* zinc-950 */
+  --color-primary-green: #6366f1; /* indigo-500 */
+  --color-secondary-cyan: #38bdf8; /* sky-400 for contrast with indigo */
+  --color-surface: #18181b; /* zinc-900 */
+  --color-surface-variant: #27272a; /* zinc-800 */
+  --color-on-surface-variant: #a1a1aa; /* zinc-400 */
+
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-100 font-dm-sans overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface border border-white/[0.05] rounded-3xl transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply border-primary-green/40;
+    box-shadow: 0 0 50px rgba(99, 102, 241, 0.15);
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden bg-primary-green text-white px-8 py-4 rounded-2xl font-jetbrains-mono font-bold transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply relative overflow-hidden bg-surface border border-white/10 px-8 py-4 rounded-2xl font-jetbrains-mono font-bold text-white hover:border-primary-green/50 hover:bg-white/[0.02] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer;
+  }
+
+  .btn-vibrant {
+    @apply relative overflow-hidden bg-white text-black px-8 py-4 rounded-2xl font-jetbrains-mono font-bold transition-all duration-300 hover:bg-zinc-200 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer;
+  }
+
+  .btn-vibrant::after {
+    content: "";
+    @apply absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-gradient-to-tr from-transparent via-white/40 to-transparent rotate-45 transition-all duration-1000;
+    transform: translateX(-100%) rotate(45deg);
+  }
+
+  .btn-vibrant:hover::after {
+    transform: translateX(100%) rotate(45deg);
+  }
+
+  /* Added for Background Effect */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+  }
+
+  .lighting-glow {
+    @apply absolute w-[1000px] h-[1000px] rounded-full blur-[150px] opacity-20 pointer-events-none -z-20;
+  }
+
+  .bento-inner {
+    @apply p-6 flex flex-col h-full;
+  }
+
+  .neon-text-primary {
+    @apply text-primary-green;
+    text-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+  }
+
+  .neon-text-secondary {
+    @apply text-secondary-cyan;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+  }
+}
