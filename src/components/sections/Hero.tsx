@@ -2,45 +2,38 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
 import { ComputersCanvas } from "../canvas";
-import { config } from "../../constants/config";
 
 const Hero = () => {
   return (
-    <section className={`relative mx-auto min-h-screen w-full bg-primary`}>
+    <section className="relative w-full h-screen mx-auto bg-primary">
       <div
-        className={`absolute inset-0 top-[120px] z-10 mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
-        <div className="mt-5 flex flex-col items-center justify-center">
-          <div className="h-5 w-5 rounded-full bg-[#915EFF]" />
-          <div className="violet-gradient h-40 w-1 sm:h-80" />
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
+            Hi, I'm <span className="text-[#915EFF]">Harsh</span>
           </h1>
-          <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            {config.hero.p[0]} <br className="hidden sm:block" />
-            {config.hero.p[1]}
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Full-Stack Developer & AI Builder <br className="sm:block hidden" />
+            based in New Delhi, India
           </p>
         </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className="xs:bottom-10 absolute bottom-32 z-10 flex w-full items-center justify-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-start items-center p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="bg-secondary mb-1 h-3 w-3 rounded-full"
+              animate={{ y: [0, 24, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>

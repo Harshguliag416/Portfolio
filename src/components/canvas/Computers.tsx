@@ -1,8 +1,8 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
+const Computers = ({ isMobile }: { isMobile: boolean }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -20,7 +20,7 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -4.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -29,31 +29,16 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
-    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-      setIsMobile(event.matches);
-    };
+    const handleChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mediaQuery.addEventListener("change", handleChange);
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Render canvas after page content is visible
-    const timer = setTimeout(() => setShouldRender(true), 100);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-      clearTimeout(timer);
-    };
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
-
-  if (!shouldRender || isMobile) {
-    return null;
-  }
 
   return (
     <Canvas
@@ -61,23 +46,11 @@ const ComputersCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ 
-        preserveDrawingBuffer: true,
-        antialias: true,
-      }}
-      style={{ 
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: 0
-      }}
+      gl={{ preserveDrawingBuffer: true }}
+      style={{ background: "transparent" }}
     >
-      <color attach="background" args={["#050816"]} />
       <Suspense fallback={null}>
         <OrbitControls
-          enablePan={false}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
