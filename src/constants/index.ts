@@ -30,6 +30,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  isl,
+  bf,
+  rp,
+  hht,
+  bi,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -310,7 +315,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/images/isl.png",
+    image: isl,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -331,7 +336,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobit,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -352,7 +357,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: carrent,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -373,7 +378,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: hht,
     sourceCodeLink: "https://hhtfreightgroup.com/",
   },
   {
@@ -394,7 +399,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: bi,
     sourceCodeLink: "https://bridgertoninternational.org/",
   },
   {
@@ -415,11 +420,11 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: tripguide,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
-    name: "Sneaker Store Automation Pipeline",
+    name: "Bot Forge",
     description:
       "1,635-line Python automation system for Sole & Laces. Fuzzy matching, image scraping, bulk CSV uploader for mydukaan.io with EU/UK size formatting and SKU deduplication across 1,351+ rows.",
     tags: [
@@ -436,7 +441,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: bf,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -562,7 +567,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/images/bf.png",
+    image: bf,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -583,7 +588,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/images/rp.png",
+    image: rp,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
 ];
