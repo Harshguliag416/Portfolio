@@ -51,129 +51,201 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Web Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AI & ML Integration",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Freelance Client Websites",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Automation & Scripting",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
+    name: "React",
+    icon: reactjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Node.js",
+    icon: nodejs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Python",
+    icon: javascript,
+  },
+  {
+    name: "FastAPI",
+    icon: backend,
+  },
+  {
+    name: "Flask",
+    icon: backend,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "SQLite",
+    icon: mongodb,
   },
   {
-    name: "git",
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "TensorFlow",
+    icon: threejs,
+  },
+  {
+    name: "MediaPipe",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Ollama",
+    icon: redux,
+  },
+  {
+    name: "GSAP",
+    icon: html,
+  },
+  {
+    name: "Three.js",
+    icon: threejs,
+  },
+  {
+    name: "Java",
+    icon: css,
+  },
+  {
+    name: "C++",
+    icon: figma,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Technical Leader",
+    companyName: "Sole & Laces Official",
+    icon: meta,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading technical operations for a sneaker retail business on mydukaan.io.",
+      "Built a full inventory automation pipeline with 1,635 lines of Python — fuzzy matching, image scraping, bulk uploader.",
+      "Developing Antigravity — an AI-powered store management system using FastAPI, React, Vite, and SQLite.",
+      "Managed CSV bulk upload pipelines for 1,351+ product rows with size formatting and SKU deduplication.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "Freelance Web Developer",
+    companyName: "Self-Employed",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Delivered production websites for logistics and business clients — HHT Freight Group and Bridgerton International.",
+      "Custom-coded builds using HTML, CSS, JS — no WordPress or templates.",
+      "Implemented Google Apps Script form backends, GitHub Pages hosting, and Cloudflare tunnel deployments.",
+      "Service plan: Rs.10,000 one-time + Rs.3,500/month care plan.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "HackIndia 2026 Participation",
+    companyName: "HackIndia",
+    icon: shopify,
+    iconBg: "#E6DEDD",
+    date: "2026",
+    points: [
+      "Participated in HackIndia 2026 - India's Biggest Web3 AI Hackathon.",
+      "Competed with developers across India in innovative tech challenges.",
+      "Demonstrated expertise in Web3 and AI technologies.",
+      "Certificate of Participation from HackIndia organizers.",
+    ],
+  },
+  {
+    title: "AI-ML Certification Program",
+    companyName: "EventDevX",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "April 17, 2026",
+    points: [
+      "Successfully participated in AI-ML Certification Program by EventDevX.",
+      "Completed comprehensive training in artificial intelligence and machine learning.",
+      "Certificate ID: EDVX-BP6B-UFDA-R7FH",
+      "Verified through EventDevX Community Infrastructure Platform.",
+    ],
+  },
+  {
+    title: "Voyager Blitz, HackIndia Spark-4",
+    companyName: "KCC Institute & HackerRank",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "March 21, 2026",
+    points: [
+      "Actively participated in Voyager Blitz hackathon hosted on HackerRank.",
+      "Competed in HackIndia Spark-4 event organized by KCC Institute.",
+      "Demonstrated problem-solving and coding skills in competitive environment.",
+      "Received Certificate of Participation from KCC Institute and HackerRank.",
+    ],
+  },
+  {
+    title: "Python Certification",
+    companyName: "GUVI Geek Networks (HCL & Google Partner)",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 26, 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully completed Python certification program by GUVI Geek Networks.",
+      "GUVI is an HCL and Google for Education Partner with ISO 9001:27001 certification.",
+      "Certificate ID: s0E706TC5I242I9J25",
+      "Verified at www.guvi.in/certificate",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Development of Agentic AI - Phase 1",
+    companyName: "Multiverz",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "November 28, 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated as Board Advisor in Development of Agentic AI challenge.",
+      "Contributed to Phase 1 of agentic AI development initiative.",
+      "Worked on cutting-edge AI agent architecture and design patterns.",
+      "Certified by Multiverz under Director Vinny Nijhon.",
+    ],
+  },
+  {
+    title: "PBEL Equivalent to Virtual Internship - AI",
+    companyName: "IBM Developer Skills Network",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "July 20, 2025",
+    points: [
+      "Successfully completed IBM's PBEL (Project Based Experiential Learning) AI internship program.",
+      "Gained hands-on experience in AI and machine learning concepts through practical projects.",
+      "Certified by IBM Developer Skills Network with passing grade.",
+      "Certificate ID: PBELAI1IN - Verified at ibmmooc.skillsnetwork.site",
     ],
   },
 ];
@@ -181,93 +253,340 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Harsh delivered a complete logistics website that exceeded our expectations. The interactive US map, contact forms, and clean dark theme made us look like an enterprise company from day one. Professional, fast, and reliable.",
+    name: "HHT Freight Group",
+    designation: "Logistics Client",
+    company: "HHT Freight Solutions",
+    image: "hht",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The website Harsh built for us has the perfect balance of corporate professionalism and modern design. The amber and charcoal theme is exactly what we wanted. Delivered on time with zero revisions needed.",
+    name: "Bridgerton International",
+    designation: "Freight & Logistics Client",
+    company: "Bridgerton International",
+    image: "bridgerton",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Working with Harsh was an absolute pleasure. His technical expertise in AI and machine learning is exceptional. He delivered a production-ready system that exceeded all our expectations. Highly recommended!",
+    name: "Rajesh Kumar",
+    designation: "Product Manager",
+    company: "",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+  {
+    testimonial:
+      "Harsh's ability to turn complex requirements into elegant solutions is remarkable. The automation pipeline he built saved us countless hours. His attention to detail and commitment to quality is unmatched.",
+    name: "Priya Sharma",
+    designation: "Operations Lead",
+    company: "",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+  },
+  {
+    testimonial:
+      "I've worked with many developers, but Harsh stands out for his problem-solving skills and dedication. He doesn't just code—he understands the business needs and delivers solutions that truly matter.",
+    name: "Amit Patel",
+    designation: "Business Consultant",
+    company: "",
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "ISL Bridge",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Indian Sign Language AI translator with 96-98% accuracy. Built with React Native, Flask, TensorFlow, and MediaPipe. Submitted at Open Innovation Hackathon under Team Alpha. Dataset acquired from IIT researchers.",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TensorFlow",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "MediaPipe",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: "/images/isl.png",
+    sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
-    name: "Job IT",
+    name: "JARVIS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Fully offline AI assistant on Windows. Voice commands via faster-whisper, hand gesture control via MediaPipe, TTS via edge-tts. Multi-gesture support, 100% local — zero internet required.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Ollama",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "MediaPipe",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Antigravity",
+    description:
+      "AI-powered sneaker store management system. FastAPI + React + Vite + SQLite with SSE streaming, inventory management, image pipeline, and an AI routing system with cloud + local Ollama fallback.",
+    tags: [
+      {
+        name: "FastAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SQLite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "HHT Freight Group",
+    description:
+      "Full logistics company website with interactive SVG US map, Google Sheets form backend, Google Apps Script API, and dark navy/neon green theme. Live on GitHub Pages.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    sourceCodeLink: "https://hhtfreightgroup.com/",
+  },
+  {
+    name: "Bridgerton International",
+    description:
+      "Corporate freight company website with deep charcoal and electric amber theme. Cloudflare tunnel deployment, professional invoice system, AI-generated logo assets.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Cloudflare",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://bridgertoninternational.org/",
+  },
+  {
+    name: "VoiceLegal",
+    description:
+      "AI-powered Indian legal assistant. Ask legal questions in natural language and get accurate answers. Built with React, Node.js, MongoDB, and GPT-4o via GitHub Models.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GPT-4o",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Sneaker Store Automation Pipeline",
+    description:
+      "1,635-line Python automation system for Sole & Laces. Fuzzy matching, image scraping, bulk CSV uploader for mydukaan.io with EU/UK size formatting and SKU deduplication across 1,351+ rows.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Automation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Web Scraping",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "ML Price Predictor",
+    description:
+      "Machine learning model for price prediction using scikit-learn. Data preprocessing, feature engineering, model training and evaluation pipeline.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ML",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "MERN E-Commerce",
+    description:
+      "Full-stack e-commerce platform built on the MERN stack. Product listings, cart, auth, order management, and admin dashboard.",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Java Task Manager",
+    description:
+      "Desktop task management application built in Java. CRUD operations, task prioritization, and deadline tracking with a clean GUI.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OOP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Desktop App",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Faceless YouTube Automation",
+    description:
+      "Semi-automated content pipeline for a self-improvement YouTube channel. Python pipeline using ElevenLabs TTS, Pexels API for footage, edge-tts, and CapCut for final edit.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ElevenLabs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Automation",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "AI Global Routing System",
+    description:
+      "Persistent background service (localhost:9000) that auto-classifies queries and routes to cloud models — Groq, OpenRouter, Mistral, Cohere, DeepSeek — with local Ollama fallback.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ollama",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Bot Forge",
+    description:
+      "AI-powered chatbot builder that creates custom bots by asking users a few simple questions. No coding required — answer the prompts, get a fully functional bot ready to deploy.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/images/bf.png",
+    sourceCodeLink: "https://github.com/harshguliag416",
+  },
+  {
+    name: "Retire Pro",
+    description:
+      "Professional networking platform built for retired individuals. Users can apply for roles, offer mentorship, share industry expertise, and connect with organizations seeking experienced advisors — like LinkedIn but built for retirement-age professionals.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/images/rp.png",
+    sourceCodeLink: "https://github.com/harshguliag416",
   },
 ];
 

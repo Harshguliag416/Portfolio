@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force dark background immediately */
+html, body, #root {
+  background-color: #050816 !important;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;

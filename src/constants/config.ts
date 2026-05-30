@@ -36,17 +36,27 @@ type TConfig = {
     feedbacks: TSection;
     works: Required<TSection>;
   };
+  social?: {
+    github?: string;
+    linkedin?: string;
+    portfolio?: string;
+  };
+  contact_info?: {
+    phone?: string;
+    email?: string;
+    website?: string;
+  };
 };
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Harsh Gulia — Full-Stack Developer & AI Builder",
+    fullName: "Harsh Gulia",
+    email: "harshguliag416@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Harsh Gulia",
+    p: ["I build fast web apps, AI tools", "& systems that ship"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +77,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `Full-stack developer and AI builder based in New Delhi, India. I build fast web apps, AI-powered systems, and production-grade tools that actually ship. Technical Lead at Sole & Laces Official and active freelance developer with live client deployments. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!`,
     },
     experience: {
       p: "What I have done so far",
@@ -90,5 +96,15 @@ export const config: TConfig = {
     ability to solve complex problems, work with different technologies,
     and manage projects effectively.`,
     },
+  },
+  social: {
+    github: "https://github.com/harshguliag416",
+    linkedin: "https://linkedin.com/in/harshguliag416",
+    portfolio: "https://harsh-gulia-portfolio--harshguliag416.replit.app/",
+  },
+  contact_info: {
+    phone: "9873073257",
+    email: "harshguliag416@gmail.com",
+    website: "https://harsh-gulia-portfolio--harshguliag416.replit.app/",
   },
 };
