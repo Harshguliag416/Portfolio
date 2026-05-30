@@ -14,7 +14,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   name,
   description,
   tags,
-  image,
   sourceCodeLink,
 }) => {
   return (
@@ -27,29 +26,20 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         glareColor="#aaa6c3"
       >
         <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
-            <img
-              src={image}
-              alt={name}
-              className="h-full w-full rounded-2xl object-cover"
-            />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-              <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-1/2 w-1/2 object-contain"
-                />
-              </div>
+          <div className="mb-4 flex justify-end">
+            <div
+              onClick={() => window.open(sourceCodeLink, "_blank")}
+              className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+            >
+              <img
+                src={github}
+                alt="github"
+                className="h-1/2 w-1/2 object-contain"
+              />
             </div>
           </div>
-          <div className="mt-5">
-            <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
-          </div>
+          <h3 className="text-[24px] font-bold text-white">{name}</h3>
+          <p className="text-secondary mt-2 text-[14px]">{description}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
               <p key={tag.name} className={`text-[14px] ${tag.color}`}>

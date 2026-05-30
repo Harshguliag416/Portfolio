@@ -80,27 +80,11 @@ const technologies: TTechnology[] = [
     icon: nodejs,
   },
   {
-    name: "Python",
-    icon: javascript,
-  },
-  {
-    name: "FastAPI",
-    icon: nodejs,
-  },
-  {
-    name: "Flask",
-    icon: nodejs,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
     name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "SQLite",
     icon: mongodb,
   },
   {
@@ -112,32 +96,20 @@ const technologies: TTechnology[] = [
     icon: git,
   },
   {
-    name: "TensorFlow",
-    icon: threejs,
-  },
-  {
-    name: "MediaPipe",
-    icon: html,
-  },
-  {
-    name: "Ollama",
-    icon: nodejs,
-  },
-  {
-    name: "GSAP",
-    icon: html,
-  },
-  {
     name: "Three.js",
     icon: threejs,
   },
   {
-    name: "Java",
+    name: "HTML",
+    icon: html,
+  },
+  {
+    name: "CSS",
     icon: css,
   },
   {
-    name: "C++",
-    icon: css,
+    name: "JavaScript",
+    icon: javascript,
   },
 ];
 
