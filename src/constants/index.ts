@@ -30,11 +30,6 @@ import {
   jobit,
   tripguide,
   threejs,
-  isl,
-  bf,
-  rp,
-  hht,
-  bi,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -315,7 +310,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: isl,
+    image: jobit,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -378,7 +373,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: hht,
+    image: carrent,
     sourceCodeLink: "https://hhtfreightgroup.com/",
   },
   {
@@ -399,7 +394,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: bi,
+    image: carrent,
     sourceCodeLink: "https://bridgertoninternational.org/",
   },
   {
@@ -420,7 +415,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobit,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -441,7 +436,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: bf,
+    image: tripguide,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -462,7 +457,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobit,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -483,7 +478,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: carrent,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
@@ -550,27 +545,6 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
-    name: "Bot Forge",
-    description:
-      "AI-powered chatbot builder that creates custom bots by asking users a few simple questions. No coding required — answer the prompts, get a fully functional bot ready to deploy.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "FastAPI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: bf,
-    sourceCodeLink: "https://github.com/harshguliag416",
-  },
-  {
     name: "Retire Pro",
     description:
       "Professional networking platform built for retired individuals. Users can apply for roles, offer mentorship, share industry expertise, and connect with organizations seeking experienced advisors — like LinkedIn but built for retirement-age professionals.",
@@ -588,7 +562,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: rp,
+    image: carrent,
     sourceCodeLink: "https://github.com/harshguliag416",
   },
 ];
