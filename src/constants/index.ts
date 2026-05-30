@@ -307,9 +307,9 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/harshguliag416",
   },
   {
-    name: "Antigravity",
+    name: "E-Commerce Manager",
     description:
-      "AI-powered sneaker store management system. FastAPI + React + Vite + SQLite with SSE streaming, inventory management, image pipeline, and an AI routing system with cloud + local Ollama fallback.",
+      "AI-powered e-commerce store management system with inventory automation, image pipeline, bulk CSV uploader, and product sync tools. Built for sneaker retail operations with FastAPI + React + Vite + SQLite and SSE streaming.",
     tags: [
       {
         name: "FastAPI",
@@ -346,7 +346,8 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://hhtfreightgroup.com/",
+    sourceCodeLink: "https://github.com/harshguliag416",
+    live_link: "https://hhtfreightgroup.com/",
   },
   {
     name: "Bridgerton International",
@@ -367,7 +368,8 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://bridgertoninternational.org/",
+    sourceCodeLink: "https://github.com/harshguliag416",
+    live_link: "https://bridgertoninternational.org/",
   },
   {
     name: "VoiceLegal",

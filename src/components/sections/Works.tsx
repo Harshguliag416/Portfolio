@@ -15,6 +15,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   description,
   tags,
   sourceCodeLink,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -27,16 +28,39 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
       >
         <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
           <div className="mb-4 flex justify-end">
-            <div
-              onClick={() => window.open(sourceCodeLink, "_blank")}
-              className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="h-1/2 w-1/2 object-contain"
-              />
-            </div>
+            {live_link ? (
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+            ) : (
+              <div
+                onClick={() => window.open(sourceCodeLink, "_blank")}
+                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="h-1/2 w-1/2 object-contain"
+                />
+              </div>
+            )}
           </div>
           <h3 className="text-[24px] font-bold text-white">{name}</h3>
           <p className="text-secondary mt-2 text-[14px]">{description}</p>
