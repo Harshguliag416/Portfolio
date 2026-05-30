@@ -7,13 +7,9 @@ import { config } from "../../constants/config";
 const Hero = () => {
   return (
     <section 
-      className={`relative mx-auto min-h-screen w-full bg-primary`}
+      className="relative w-full h-screen mx-auto"
       style={{
-        backgroundColor: "#050816",
-        minHeight: "100vh",
-        width: "100%",
-        position: "relative",
-        overflow: "hidden"
+        backgroundColor: "#050816"
       }}
     >
       <div

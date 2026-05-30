@@ -17,12 +17,10 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -87,11 +85,11 @@ const technologies: TTechnology[] = [
   },
   {
     name: "FastAPI",
-    icon: backend,
+    icon: nodejs,
   },
   {
     name: "Flask",
-    icon: backend,
+    icon: nodejs,
   },
   {
     name: "Tailwind CSS",
@@ -119,11 +117,11 @@ const technologies: TTechnology[] = [
   },
   {
     name: "MediaPipe",
-    icon: figma,
+    icon: html,
   },
   {
     name: "Ollama",
-    icon: redux,
+    icon: nodejs,
   },
   {
     name: "GSAP",
@@ -139,7 +137,7 @@ const technologies: TTechnology[] = [
   },
   {
     name: "C++",
-    icon: figma,
+    icon: css,
   },
 ];
 
