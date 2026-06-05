@@ -1,86 +1,65 @@
-# Harsh Gulia — Portfolio
+# 🌐 Harsh Gulia — 3D Developer Portfolio
 
-> Full-Stack Developer & AI Builder based in New Delhi, India.
-
-## 🔗 Live Site
-
-[harsh-gulia-portfolio--harshguliag416.replit.app](https://harsh-gulia-portfolio--harshguliag416.replit.app/)
+A responsive, high-end 3D developer portfolio representing full-stack web and AI projects. Styled with dark mode aesthetics and premium interactive features.
 
 ---
 
-## 👤 About Me
+## 🚀 Key Features
 
-Full-stack developer and AI builder based in New Delhi, India.
-4th semester B.Tech CSE at KCCITM (AKTU). Technical Lead at Sole & Laces Official.
-
-I build fast web apps, AI-powered systems, and production-grade tools that actually ship.
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Stack |
-|---|---|---|
-| ISL Bridge | Indian Sign Language AI translator, 96-98% accuracy | React Native, Flask, TensorFlow, MediaPipe |
-| JARVIS | Fully offline AI assistant with voice + gesture control | Python, Ollama, Whisper, MediaPipe |
-| Antigravity | AI-powered sneaker store management system | FastAPI, React, Vite, SQLite |
-| HHT Freight Group | Live logistics company website | HTML, CSS, JS, Google Apps Script |
-| Bridgerton International | Corporate freight website with Cloudflare deployment | HTML, CSS, JS, Cloudflare |
-| VoiceLegal | AI Indian legal assistant | React, Node.js, MongoDB, GPT-4o |
-| Bot Forge | AI chatbot builder from simple questions | Python, React, FastAPI, LLM |
-| Retire Pro | LinkedIn-style platform for retired professionals | React, Node.js, MongoDB, Express |
-| Sneaker Store Automation | 1,635-line Python automation pipeline | Python, Automation, CSV |
-| ML Price Predictor | ML model for price prediction | Python, scikit-learn, Pandas |
-| MERN E-Commerce | Full-stack e-commerce platform | MongoDB, Express, React, Node.js |
-| Faceless YouTube Automation | Semi-automated YouTube content pipeline | Python, ElevenLabs, Pexels API |
-| AI Global Routing System | Auto-classifies and routes queries to cloud LLMs | Python, FastAPI, Groq, Ollama |
-| Java Task Manager | Desktop task manager with GUI | Java, OOP |
+* **3D Interactive Scene**: Includes 3D computer models and globe models built with Three.js.
+* **Fluid Layout**: Modern typography (Google Fonts) and custom glassmorphic panels.
+* **Work Experience Timeline**: Interactive professional roadmap rendering.
+* **E-mail Contact Form**: Clean email sender panel linked directly with EmailJS client.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-**Frontend:** React, TypeScript, Tailwind CSS, Vite, GSAP, Three.js, Next.js
-
-**Backend:** Node.js, Express, Python, Flask, FastAPI
-
-**AI / ML:** TensorFlow, MediaPipe, Ollama, faster-whisper, scikit-learn, GPT-4o
-
-**Database:** MongoDB, SQLite, Firebase
-
-**Tools:** Docker, Git, Cloudflare, Google Apps Script, Vercel, GitHub Pages
+* **Framework**: React + Vite (TypeScript)
+* **3D Rendering**: Three.js, `@react-three/fiber`, `@react-three/drei`
+* **Animations**: Framer Motion, React Parallax Tilt
+* **Styling**: Tailwind CSS
+* **Deployment**: GitHub Pages / Replit
 
 ---
 
-## 📜 Certifications
+## 📦 Project Structure
 
-- HCL TechBee Program
-- IBM AI Foundations
-- Internshala AI Tools & Applications
-- Python Programming — GUVI
-- AI Tools Mastery — be10x
-- GenAI Webinar — IEEE EDS MAIT
-- HackIndia 2026 — Team Alpha
-
----
-
-## 📬 Contact
-
-- 📧 harshguliag416@gmail.com
-- 📱 +91-9873072357
-- 💼 [linkedin.com/in/harshguliag416](https://linkedin.com/in/harshguliag416)
-- 🐙 [github.com/harshguliag416](https://github.com/harshguliag416)
+```
+Portfolio/
+├── public/                 # 3D GLTF models, scenes, and textures
+├── src/
+│   ├── assets/             # Brand logos and technology badges
+│   ├── components/         # 3D Canvas, Loader, Sections, Navbar
+│   ├── hoc/                # High-order components
+│   ├── utils/              # Framer motion configurations
+│   ├── main.tsx            # App mount
+│   └── index.css           # Global Tailwind utilities
+├── tailwind.config.cjs     # Styling config
+└── vite.config.ts          # Compilation settings
+```
 
 ---
 
-## ⚖️ License & Credits
+## ⚙️ Run Portfolio Locally
 
-This portfolio was built using an open-source 3D portfolio template.
-
-All content, projects, data, and personal information belong to Harsh Gulia.
-
-Original template credit goes to the respective author(s) of the base repository.
-
----
-
-*Built with 🔥 from New Delhi, India — 2026*
+1. **Clone**:
+   ```bash
+   git clone https://github.com/Harshguliag416/Portfolio.git
+   cd Portfolio
+   ```
+2. **Install**:
+   ```bash
+   npm install
+   ```
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root folder and define:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+4. **Execute**:
+   ```bash
+   npm run dev
+   ```

@@ -29,3 +29,20 @@ dist-ssr
 # env
 .env
 
+
+# Standard Professional Cleanup Rules
+node_modules/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.pnp*
+.pnp.js
+.expo/
+dist-buildcheck/
+dist-buildcheck-2/
+.vite/
+Thumbs.db
+venv/
+__pycache__/
+*.pyc
